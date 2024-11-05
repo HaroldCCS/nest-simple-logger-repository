@@ -1,30 +1,34 @@
 Implementation of a Simple Logger Repository
 
 all configuration on common/logger and app.module.ts
+</br>
 
 **Repository**
-step 1: create an abstract repository for Logger
-step 2: create a implementers of LoggerRepository
+<p>step 1: create an abstract repository for Logger</p>
+<p>step 2: create a implementers of LoggerRepository</p>
+</br>
 
 **Provider and Module**
-step 3: create and configure logger.provider for make dynamically instantiate of logger, according to the .env variable
-step 4: create a logger.module to make it a global instance
+<p>step 3: create and configure logger.provider for make dynamically instantiate of logger, according to the .env variable</p>
+<p>step 4: create a logger.module to make it a global instance</p>
+</br>
 
 **Environment configuration**
-step 5: create a .env file and set the variable LOGGER_TYPE=file
+<p>step 5: create a .env file and set the variable LOGGER_TYPE=file</p>
+</br>
 
 **Implementation**
-step 6: import LoggerModule in app.module for use the global instance
-step 7: test in app.controller or app.service
+<p>step 6: import LoggerModule in app.module for use the global instance</p>
+<p>step 7: test in app.controller or app.service</p>
 
+</br>
 
 **Extra steps**
-For use the .env variables, need to install:
-npm i --save @nestjs/config
+<p>For use the .env variables, need to install:</p>
+<p>npm i --save @nestjs/config</p>
+<p>And configure ConfigModule.forRoot() on imports to app.module</p>
 
-And configure ConfigModule.forRoot() on imports to app.module
-
-
+</br>
 **Run**
-npm install
-npm run start:dev
+<p>npm install</p>
+<p>npm run start:dev</p>
